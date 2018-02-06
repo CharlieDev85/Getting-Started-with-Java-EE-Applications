@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="styles/signupstyles.css"></link>
+    </h:head>
+    <h:body id="ba">
+        <f:view>
+            <h2>Signup</h2>
+            <h:form>
+                <div class="container">
+                    <h:outputLabel value="Username"></h:outputLabel>
+                    <h:inputText  value="" required="true"></h:inputText>
+
+                    <h:outputLabel><b>Email</b></h:outputLabel>
+                    <h:inputText value="" required="true"></h:inputText>
+
+                    <h:outputLabel><b>Password</b></h:outputLabel>
+                    <h:inputSecret value="" required="true"></h:inputSecret>
+
+                    <h:outputLabel><b>Repeat Password</b></h:outputLabel>
+                    <h:inputSecret value="" required="true"/>
+
+                    <div class="clearfix">
+                        <h:button  class="cancelbtn" value="Cancel"></h:button>
+                        <h:button class="signupbtn" value="SignIn"></h:button>
+                    </div>
+                </div>
+            </h:form>
+        </f:view>
+    </h:body>
+</html>
