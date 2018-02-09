@@ -37,6 +37,7 @@ public class MessageView {
     
     // Saves the message and then returns the string "theend"
     public String postMessage(){
+       System.out.println("el mensaje es: " + message.getMessage());
        this.messageFacade.create(message);
        return "theend";
     }

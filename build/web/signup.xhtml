@@ -13,20 +13,20 @@
             <h:form>
                 <div class="container">
                     <h:outputLabel value="Username"></h:outputLabel>
-                    <h:inputText  value="" required="true"></h:inputText>
+                    <h:inputText  value="#{UserSiteView.user.username}" required="true"></h:inputText>
 
                     <h:outputLabel><b>Email</b></h:outputLabel>
-                    <h:inputText value="" required="true"></h:inputText>
+                    <h:inputText value="#{UserSiteView.user.email}" required="true"></h:inputText>
 
                     <h:outputLabel><b>Password</b></h:outputLabel>
-                    <h:inputSecret value="" required="true"></h:inputSecret>
+                    <h:inputSecret value="#{UserSiteView.pass1}" required="true"></h:inputSecret>
 
                     <h:outputLabel><b>Repeat Password</b></h:outputLabel>
-                    <h:inputSecret value="" required="true"/>
+                    <h:inputSecret value="#{UserSiteView.pass2}" required="true"/>
 
                     <div class="clearfix">
                         <h:button  class="cancelbtn" value="Cancel"></h:button>
-                        <h:button class="signupbtn" value="SignIn"></h:button>
+                        <h:commandButton action="#{UserSiteView.postUser}" class="signupbtn" value="SignIn"></h:commandButton>
                     </div>
                 </div>
             </h:form>
