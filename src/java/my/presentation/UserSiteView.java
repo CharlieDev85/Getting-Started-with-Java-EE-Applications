@@ -73,7 +73,7 @@ public class UserSiteView {
 //               user.setAuxText("hola");
 //               user.setEncryptedPass(pass1);
                this.userFacade.create(user);
-               System.out.println("ya tenemos varios users: "+this.getNumberOfUsers());
+//               System.out.println("ya tenemos varios users: "+this.getNumberOfUsers());
                return "welcome";
         }
         return "check";

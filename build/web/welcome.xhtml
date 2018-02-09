@@ -13,6 +13,10 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <h:body>
-        <h:outputLabel value="Welcome"/>
+        <h:outputLabel value="Welcome "/>
+        <h:outputText value="#{UserSiteView.user.username} "/>
+        <h:outputText value="You are our "/>
+        <h:outputText value="#{UserSiteView.numberOfUsers}"/>
+        <h:outputText value="th user."/>
     </h:body>
 </html>
